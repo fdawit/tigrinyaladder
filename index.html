@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asmara Tigrinya Thinking Path</title>
+  <meta name="description" content="A no-audio, Language Transfer-inspired Eritrean/Asmara Tigrinya learning path built with HTML, CSS, JavaScript, and Python-generated curriculum data." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand" role="banner">
+      <button id="menuToggle" class="icon-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div>
+        <p class="eyebrow">No-audio, pattern-first Eritrean course</p>
+        <h1>Asmara Tigrinya Thinking Path</h1>
+      </div>
+    </div>
+
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <button data-view="home" class="nav-link active">Home</button>
+      <button data-view="path" class="nav-link">Path</button>
+      <button data-view="practice" class="nav-link">Practice</button>
+      <button data-view="explore" class="nav-link">Explore More</button>
+      <button data-view="fidel" class="nav-link">Fidel Lab</button>
+      <button data-view="checkpoints" class="nav-link">Checkpoints</button>
+      <button data-view="guide" class="nav-link">Guide</button>
+      <button id="phoneticToggle" class="nav-link phonetic-toggle" type="button" aria-pressed="true">Hide plain cues</button>
+    </nav>
+  </header>
+
+  <main id="app" class="app-shell" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <p><strong>Asmara Tigrinya Thinking Path</strong> teaches by noticing, guessing, checking, and transferring patterns.</p>
+    <button id="resetProgress" class="text-button">Reset progress</button>
+  </footer>
+
+  <script src="js/curriculum.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
